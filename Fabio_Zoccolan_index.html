@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#2451f4">
+  <meta name="description" content="Fabio Zoccolan, PhD student in numerical analysis at EPFL. Research in stochastic differential equations, data assimilation, and reduced-order modelling.">
+  <title>Fabio Zoccolan — Research in Numerical Analysis</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="mobile-header"><a class="mobile-brand" href="#home">Fabio Zoccolan<span>.</span></a><button type="button" id="menu-toggle" class="menu-toggle" aria-controls="site-sidebar" aria-expanded="false">Menu <span class="menu-symbol" aria-hidden="true">☰</span></button></div>
+<div class="menu-backdrop" id="menu-backdrop" hidden></div>
+<div class="site-shell">
+  <aside class="sidebar" id="site-sidebar" aria-label="Primary navigation">
+    <div class="sidebar-top">
+      <a class="sidebar-identity" href="#home"><span class="sidebar-monogram">FZ / RESEARCH</span><strong>Fabio<br>Zoccolan<span class="name-period">.</span></strong></a>
+      <p class="sidebar-role">PhD Student · Numerical Analysis</p>
+      <p class="sidebar-affiliation">École Polytechnique Fédérale de Lausanne (EPFL)</p>
+      <div class="sidebar-rule"></div>
+      <nav class="site-nav" aria-label="Website sections">
+        <a href="#home" class="active" aria-current="location"><span>01</span>Home</a>
+        <a href="#research"><span>02</span>Research</a>
+        <a href="#publications"><span>03</span>Publications</a>
+        <a href="#talks"><span>04</span>Talks</a>
+        <a href="#teaching"><span>05</span>Teaching</a>
+        <a href="#activities"><span>06</span>Academic Activities</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="sidebar-rule"></div>
+      <a href="mailto:fabio.zoccolan@epfl.ch">Email <span aria-hidden="true">↗</span></a>
+      <a href="assets/cv/Fabio_Zoccolan_CV.pdf" target="_blank" rel="noopener">CV (PDF) <span aria-hidden="true">↗</span></a>
+      <span class="sidebar-note">Mathematics · EPFL</span>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- HOME: Edit the About me paragraphs and academic links here. -->
+    <section id="home" class="content-section home-section" aria-labelledby="home-title">
+      <div class="section-tag"><span>01 / HOME</span><span class="tag-rule"></span></div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">FABIO ZOCCOLAN <span class="eyebrow-divider">/</span> NUMERICAL ANALYSIS</p>
+          <h1 id="home-title">About me</h1>
+          <div class="bio">
+            <p>I am a PhD student in Mathematics (Numerical Analysis) at the <strong>École Polytechnique Fédérale de Lausanne (EPFL)</strong>, under the supervision of <strong>Prof. Fabio Nobile</strong> and <strong>Dr. Yoshihito Kazashi</strong>. I am scheduled to defend my PhD thesis in December 2026.</p>
+            <p>In 2025, I spent 11 months as a visiting PhD researcher in <strong>Prof. Youssef Marzouk’s UQ Group</strong> at the <strong>Massachusetts Institute of Technology (MIT)</strong>, working on data assimilation.</p>
+            <p>In 2021, I obtained my Master’s degree in Mathematics from the <strong>University of Trieste, in collaboration with SISSA</strong>, where I completed my Master’s thesis under the supervision of <strong>Prof. Gianluigi Rozza</strong> and <strong>Dr. Maria Strazzullo</strong>.</p>
+          </div>
+          <div class="profile-links" aria-label="Academic profiles and CV">
+            <a href="https://scholar.google.com/citations?user=9nad0UoAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener noreferrer" class="profile-link">Google Scholar<span aria-hidden="true"> ↗</span></a>
+            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Zoccolan%2C%20Fabio%22&amp;f=resource_type%3Asoftware&amp;l=list&amp;p=1&amp;s=10&amp;sort=bestmatch" target="_blank" rel="noopener noreferrer" class="profile-link">Zenodo<span aria-hidden="true"> ↗</span></a>
+            <a class="profile-link" href="https://github.com/FabioZoccolan" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="profile-link cv-link" href="assets/cv/Fabio_Zoccolan_CV.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="profile-photo">
+          <img src="assets/images/fabio-original-photo.jpeg" width="1536" height="2048" alt="Fabio Zoccolan smiling in front of a Japanese temple. The entire original photograph is shown without cropping." fetchpriority="high">
+          <figcaption>Fabio Zoccolan</figcaption>
+        </figure>
+      </div>
+      <div class="home-secondary">
+        <div class="home-interests">
+          <div class="mini-heading"><span class="mini-line"></span><h2>Research interests</h2></div>
+          <div class="interests-grid">
+            <a class="interest-card" href="#research-sde"><span class="interest-number">01 / METHODS</span><h3>Numerical Methods for Stochastic Differential Equations</h3><span class="interest-arrow" aria-hidden="true">↗</span></a>
+            <a class="interest-card" href="#research-data"><span class="interest-number">02 / INFERENCE</span><h3>Data Assimilation</h3><span class="interest-arrow" aria-hidden="true">↗</span></a>
+            <a class="interest-card" href="#research-rom"><span class="interest-number">03 / REDUCTION</span><h3>Reduced-Order Modelling</h3><span class="interest-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="home-bottom-grid">
+          <div class="home-feature">
+            <div class="mini-heading"><span class="mini-line"></span><h2>Research focus</h2></div>
+            <p>I work on the development and analysis of numerical methods for stochastic dynamical systems, with interests spanning dynamical low-rank approximation, data assimilation, and efficient reduced-order models.</p>
+            <a class="text-action" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="home-feature recent-work">
+            <div class="mini-heading"><span class="mini-line"></span><h2>Recent work</h2></div>
+            <div class="recent-entry"><span>2026</span><div><strong>Numerical Methods for DLRA of SDEs — Part II</strong><a class="resource-chip" href="https://arxiv.org/abs/2609.20317" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a> <a class="resource-chip" href="https://doi.org/10.5281/zenodo.23344557" target="_blank" rel="noopener noreferrer">Code · Zenodo <span aria-hidden="true">↗</span></a></div></div>
+            <div class="recent-entry"><span>2026</span><div><strong>Dynamical Low-Rank Filters for Data Assimilation</strong><a class="resource-chip" href="https://arxiv.org/abs/2607.27432" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a> <a class="resource-chip" href="https://doi.org/10.5281/zenodo.23342050" target="_blank" rel="noopener noreferrer">Code · Zenodo <span aria-hidden="true">↗</span></a></div></div>
+          </div>
+        </div>
+        <div class="contact-block" aria-labelledby="contact-title">
+          <div><span class="contact-label">CONTACT</span><h2 id="contact-title">Get in touch<span class="headline-dot">.</span></h2></div>
+          <div class="contact-details"><a href="mailto:fabio.zoccolan@epfl.ch">fabio.zoccolan@epfl.ch <span aria-hidden="true">↗</span></a><p>EPFL · Mathematics · Lausanne, Switzerland</p><p class="contact-small"><a href="https://orcid.org/0000-0002-5845-8415" target="_blank" rel="noopener noreferrer" >ORCID<span aria-hidden="true"> ↗</span></a></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH: Three themes, original scientific plots and animation. -->
+    <section id="research" class="content-section" aria-labelledby="research-title">
+      <div class="section-tag"><span>02 / RESEARCH</span><span class="tag-rule"></span></div>
+      <h2 class="section-headline" id="research-title">Research<span class="headline-dot">.</span></h2>
+      <p class="section-lede">My interests connect numerical analysis, stochastic dynamical systems, data assimilation, and reduced-order modelling.</p>
+
+      <article class="research-theme" id="research-sde">
+        <div class="theme-heading"><span class="theme-index">01</span><div><p class="theme-kicker">NUMERICAL ANALYSIS</p><h3>Numerical Methods for Stochastic Differential Equations</h3></div></div>
+        <div class="theme-body"><p>My research focuses on the development and mathematical analysis of numerical methods for stochastic differential equations. I am particularly interested in numerical discretization schemes for stochastic dynamical systems, their convergence and stability properties, and the development of computationally efficient approximations.</p>
+        <p>A particular focus of my work is the numerical analysis of dynamical low-rank approximations for stochastic differential equations, including the study of approximation errors, time discretization, and mean-square stability.</p></div>
+        <div class="media-section-title"><span>NUMERICAL EXPERIMENTS</span><span class="soft-line"></span><span>1 × 2</span></div>
+        <div class="figure-grid grid-two"><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/sde-convergence-error.png" data-caption="Convergence and error analysis" aria-label="Expand figure: Convergence and error analysis">
+    <img src="assets/images/sde-convergence-error.png" alt="Logarithmic numerical error plot comparing DLR Euler–Maruyama, projection–splitting, and other discretizations against the true solution." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>Convergence and error analysis</strong><span>Numerical errors for different DLR discretizations as the time-step size varies.</span></figcaption>
+</figure><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/sde-relative-averaged-mean-error.png" data-caption="Relative averaged mean error" aria-label="Expand figure: Relative averaged mean error">
+    <img src="assets/images/sde-relative-averaged-mean-error.png" alt="Relative averaged mean error versus number of samples at time T=20 for different DLR filtering methods and approximation ranks." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>Relative averaged mean error</strong><span>Error against EF SDE as a function of sample size for multiple ranks and filtering methods, T = 20.</span></figcaption>
+</figure></div>
+        <div class="associated-work"><p>RELATED WORK</p><div class="resource-row"><a class="resource-chip" href="https://doi.org/10.1090/mcom/3999" target="_blank" rel="noopener noreferrer">DLRA for SDEs · Journal <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://arxiv.org/abs/2601.21428" target="_blank" rel="noopener noreferrer">Time discretization · arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://arxiv.org/abs/2609.20317" target="_blank" rel="noopener noreferrer">Stochastic discretization · arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23344557" target="_blank" rel="noopener noreferrer">Code · Zenodo <span aria-hidden="true">↗</span></a></div></div>
+      </article>
+
+      <article class="research-theme" id="research-data">
+        <div class="theme-heading"><span class="theme-index">02</span><div><p class="theme-kicker">FILTERING &amp; SMOOTHING</p><h3>Data Assimilation</h3></div></div>
+        <div class="theme-body"><p>My research in data assimilation focuses on filtering and smoothing for stochastic dynamical systems, with particular emphasis on computationally efficient methods for high-dimensional problems. I investigate particle-based approaches and dynamical low-rank approximations for state estimation and uncertainty quantification.</p></div>
+        <div class="media-section-title"><span>TWO-LAYER QUASI-GEOSTROPHIC MODEL</span><span class="soft-line"></span><span>1 × 4</span></div>
+        <p class="media-intro">State estimation for a two-layer quasi-geostrophic problem. The four figures compare the reference state and different filtering approaches at T = 60 (layer 1).</p>
+        <div class="figure-grid grid-four"><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/qg-reference.png" data-caption="Reference" aria-label="Expand figure: Reference">
+    <img src="assets/images/qg-reference.png" alt="Contour plot of the true reference state of the two-layer quasi-geostrophic model, layer one." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>Reference</strong><span>True state (T = 60).</span></figcaption>
+</figure><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/qg-standard-pf.png" data-caption="Standard PF" aria-label="Expand figure: Standard PF">
+    <img src="assets/images/qg-standard-pf.png" alt="Contour plot of the standard particle-filter mean for a two-layer quasi-geostrophic model, layer one." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>Standard PF</strong><span>Standard particle-filter mean.</span></figcaption>
+</figure><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/qg-ef-sde.png" data-caption="EF SDE" aria-label="Expand figure: EF SDE">
+    <img src="assets/images/qg-ef-sde.png" alt="Contour plot of the EF SDE mean for a two-layer quasi-geostrophic model, layer one." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>EF SDE</strong><span>Ensemble-filter SDE mean.</span></figcaption>
+</figure><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/qg-dlr.png" data-caption="DLR" aria-label="Expand figure: DLR">
+    <img src="assets/images/qg-dlr.png" alt="Contour plot of the dynamical low-rank reconstructed field for a two-layer quasi-geostrophic model, layer one." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>DLR</strong><span>Dynamical low-rank reconstruction.</span></figcaption>
+</figure></div>
+        <div class="media-section-title media-gap"><span>NOISY LORENZ ’63 MODEL</span><span class="soft-line"></span><span>ANIMATION</span></div>
+        <figure class="animation-figure"><img src="assets/images/lorenz63-particle-clouds.gif" alt="Animated comparison of particle cloud evolution for different filters applied to a noisy Lorenz '63 problem." loading="lazy"><figcaption><strong>Particle evolution for a noisy Lorenz ’63 problem.</strong><span>Animated comparison of particle clouds for different filtering approaches.</span></figcaption></figure>
+        <div class="associated-work"><p>RELATED WORK &amp; CODE</p><div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2607.27432" target="_blank" rel="noopener noreferrer">DLR Filters · Paper <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23342050" target="_blank" rel="noopener noreferrer">DLR Filters · Code <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://arxiv.org/abs/2607.27438" target="_blank" rel="noopener noreferrer">DLR Smoothing · Paper <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23336917" target="_blank" rel="noopener noreferrer">DLR Smoothing · Code <span aria-hidden="true">↗</span></a></div></div>
+      </article>
+
+      <article class="research-theme" id="research-rom">
+        <div class="theme-heading"><span class="theme-index">03</span><div><p class="theme-kicker">LOW-DIMENSIONAL APPROXIMATIONS</p><h3>Reduced-Order Modelling</h3></div></div>
+        <div class="theme-body"><p>My research interests encompass reduced-order modelling in a broad sense, with a focus on the development and analysis of efficient numerical methods for approximating high-dimensional and complex dynamical systems.</p>
+        <p>A central direction of my research concerns dynamical low-rank approximation (DLRA), particularly for stochastic differential equations. I am interested in the mathematical foundations of these approximations, their numerical discretization, and their application to problems involving stochastic dynamics and uncertainty quantification.</p>
+        <p>More generally, I am interested in reduced-basis methods and reduced-order modelling for time-dependent problems. My previous work includes the development and analysis of stabilized reduced-basis methods for parametrized advection-dominated optimal control problems with random inputs, investigating in particular the role of streamline upwind Petrov–Galerkin (SUPG) stabilization during the offline and online stages.</p></div>
+        <div class="media-section-title"><span>OFFLINE-ONLY VS OFFLINE–ONLINE SUPG STABILIZATION</span><span class="soft-line"></span><span>1 × 2</span></div>
+        <div class="figure-grid grid-two"><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/supg-offline-only.png" data-caption="Offline-only SUPG" aria-label="Expand figure: Offline-only SUPG">
+    <img src="assets/images/supg-offline-only.png" alt="Scientific heatmap of offline-only SUPG stabilization for a reduced-order approximation." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>Offline-only SUPG</strong><span>Stabilization applied during the offline stage.</span></figcaption>
+</figure><figure class="science-figure">
+  <button class="figure-open" type="button" data-full="assets/images/supg-offline-online.png" data-caption="Offline–online SUPG" aria-label="Expand figure: Offline–online SUPG">
+    <img src="assets/images/supg-offline-online.png" alt="Scientific heatmap of offline-online SUPG stabilization for a reduced-order approximation." loading="lazy" decoding="async">
+    <span class="expand-hint" aria-hidden="true">View larger <span>↗</span></span>
+  </button>
+  <figcaption><strong>Offline–online SUPG</strong><span>Stabilization applied during both stages.</span></figcaption>
+</figure></div>
+        <div class="associated-work"><p>RELATED WORK</p><div class="resource-row"><a class="resource-chip" href="https://doi.org/10.1515/cmam-2023-0171" target="_blank" rel="noopener noreferrer">SUPG reduced-order method · Journal <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.1515/jnma-2023-0006" target="_blank" rel="noopener noreferrer">Stabilized weighted ROM · Journal <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.1090/mcom/3999" target="_blank" rel="noopener noreferrer">DLRA for SDEs · Journal <span aria-hidden="true">↗</span></a></div></div>
+      </article>
+    </section>
+
+    <!-- PUBLICATIONS: The manuscript in preparation is intentionally excluded. -->
+    <section id="publications" class="content-section" aria-labelledby="publications-title">
+      <div class="section-tag"><span>03 / PUBLICATIONS</span><span class="tag-rule"></span></div>
+      <h2 class="section-headline" id="publications-title">Publications<span class="headline-dot">.</span></h2>
+      <p class="section-lede">Journal publications first, followed by publicly available preprints. Code and reproducibility resources appear beside the relevant papers.</p>
+      <div class="publication-group"><div class="group-heading"><h3>Journal Publications</h3><span>03 PAPERS</span></div><div class="publication-list"><article class="publication-item">
+  <div class="publication-year">2025</div>
+  <div class="publication-copy">
+    <h4>Dynamical low-rank approximation for stochastic differential equations</h4>
+    <p class="publication-authors">Yoshihito Kazashi, Fabio Nobile, Fabio Zoccolan</p>
+    <p class="publication-venue">Mathematics of Computation, 94(353), 1335–1375 (2025)</p>
+    <div class="resource-row"><a class="resource-chip" href="https://doi.org/10.1090/mcom/3999" target="_blank" rel="noopener noreferrer">Journal article <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="publication-item">
+  <div class="publication-year">2025</div>
+  <div class="publication-copy">
+    <h4>A streamline upwind Petrov-Galerkin reduced order method for advection-dominated partial differential equations under optimal control</h4>
+    <p class="publication-authors">Fabio Zoccolan, Maria Strazzullo, Gianluigi Rozza</p>
+    <p class="publication-venue">Computational Methods in Applied Mathematics, 25(1), 237–260 (2025)</p>
+    <div class="resource-row"><a class="resource-chip" href="https://doi.org/10.1515/cmam-2023-0171" target="_blank" rel="noopener noreferrer">Journal article <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="publication-item">
+  <div class="publication-year">2025</div>
+  <div class="publication-copy">
+    <h4>Stabilized weighted reduced order methods for parametrized advection-dominated optimal control problems governed by partial differential equations with random inputs</h4>
+    <p class="publication-authors">Fabio Zoccolan, Maria Strazzullo, Gianluigi Rozza</p>
+    <p class="publication-venue">Journal of Numerical Mathematics, 33(1), 1–35 (2025)</p>
+    <div class="resource-row"><a class="resource-chip" href="https://doi.org/10.1515/jnma-2023-0006" target="_blank" rel="noopener noreferrer">Journal article <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div></div>
+      <div class="publication-group"><div class="group-heading"><h3>Preprints</h3><span>06 PREPRINTS</span></div><div class="publication-list"><article class="publication-item">
+  <div class="publication-year">2026</div>
+  <div class="publication-copy">
+    <h4>Existence of Dynamical Low-Rank Approximation for SDEs with Locally Lipschitz Coefficients</h4>
+    <p class="publication-authors">Yoshihito Kazashi, Fabio Nobile, Fabio Zoccolan</p>
+    <p class="publication-venue">arXiv:2609.20307</p>
+    <div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2609.20307" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="publication-item">
+  <div class="publication-year">2026</div>
+  <div class="publication-copy">
+    <h4>Further Approaches of Dynamical Low-Rank Approximation for SDEs</h4>
+    <p class="publication-authors">Yoshihito Kazashi, Fabio Nobile, Fabio Zoccolan</p>
+    <p class="publication-venue">arXiv:2609.20292</p>
+    <div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2609.20292" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="publication-item">
+  <div class="publication-year">2026</div>
+  <div class="publication-copy">
+    <h4>Numerical Methods for Dynamical Low-Rank Approximations of Stochastic Differential Equations — Part II: Stochastic discretization</h4>
+    <p class="publication-authors">Yoshihito Kazashi, Fabio Nobile, Fabio Zoccolan</p>
+    <p class="publication-venue">arXiv:2609.20317</p>
+    <div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2609.20317" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23344557" target="_blank" rel="noopener noreferrer">Code on Zenodo <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="publication-item">
+  <div class="publication-year">2026</div>
+  <div class="publication-copy">
+    <h4>Dynamical Low-Rank Filters for Data Assimilation</h4>
+    <p class="publication-authors">Yoshihito Kazashi, Youssef Marzouk, Fabio Nobile, Fabio Zoccolan</p>
+    <p class="publication-venue">arXiv:2607.27432</p>
+    <div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2607.27432" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23342050" target="_blank" rel="noopener noreferrer">Code on Zenodo <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="publication-item">
+  <div class="publication-year">2026</div>
+  <div class="publication-copy">
+    <h4>Dynamical Low-Rank Smoothing</h4>
+    <p class="publication-authors">Youssef Marzouk, Fabio Nobile, Fabio Zoccolan</p>
+    <p class="publication-venue">arXiv:2607.27438</p>
+    <div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2607.27438" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23336917" target="_blank" rel="noopener noreferrer">Code on Zenodo <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="publication-item">
+  <div class="publication-year">2026</div>
+  <div class="publication-copy">
+    <h4>Numerical Methods for Dynamical Low-Rank Approximations of Stochastic Differential Equations — Part I: Time discretization</h4>
+    <p class="publication-authors">Yoshihito Kazashi, Fabio Nobile, Fabio Zoccolan</p>
+    <p class="publication-venue">arXiv:2601.21428</p>
+    <div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2601.21428" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23344137" target="_blank" rel="noopener noreferrer">Code on Zenodo <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div></div>
+      <p class="bibliography-download"><a class="resource-chip" href="assets/publications.bib" download>Download BibTeX bibliography <span aria-hidden="true">↓</span></a></p>
+    </section>
+
+    <!-- TALKS: Keep both scheduled 2027 talks in Upcoming Talks. -->
+    <section id="talks" class="content-section" aria-labelledby="talks-title">
+      <div class="section-tag"><span>04 / TALKS</span><span class="tag-rule"></span></div>
+      <h2 class="section-headline" id="talks-title">Talks &amp; Presentations<span class="headline-dot">.</span></h2>
+      <p class="section-lede">Invited talks, contributed presentations, and posters at conferences and seminars.</p>
+      <div class="publication-group"><div class="group-heading"><h3>Upcoming Talks</h3><span>SCHEDULED · 2027</span></div><div class="talk-list"><article class="talk-item">
+  <div class="talk-date"><span>Jul</span><strong>2027</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Scheduled talk</div>
+    <h4>Ensemble Dynamical Low-Rank Filtering and Smoothing</h4>
+    <p>ICIAM 2027 · MS Data Assimilation &amp; ML Surrogates for Fluid Dynamics <span class="dot-separator" aria-hidden="true">·</span> The Hague, Netherlands</p>
+    <div class="resource-row"><a class="resource-chip" href="https://iciam.org/events/2027/jul/11/iciam-2027-hague" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article><article class="talk-item">
+  <div class="talk-date"><span>Feb</span><strong>2027</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Scheduled talk</div>
+    <h4>Dynamical Low-Rank Filtering and Smoothing</h4>
+    <p>SIAM CSE 2027 · MS Dimensionality Reduction for Large-Scale Data Assimilation <span class="dot-separator" aria-hidden="true">·</span> Pittsburgh, USA</p>
+    <div class="resource-row"><a class="resource-chip" href="https://www.siam.org/conferences-events/siam-conferences/cse27/" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div></div>
+      <div class="publication-group"><div class="group-heading"><h3>Past Talks &amp; Posters</h3><span>2023—2026</span></div><div class="year-group"><h4 class="year-heading">2026</h4><div class="talk-list"><article class="talk-item">
+  <div class="talk-date"><span>Jul</span><strong>2026</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Poster</div>
+    <h4>Rank Control for Step-Truncation Methods for ODEs and SDEs</h4>
+    <p>FoCM 2026 · Multiresolution and Adaptivity in Numerical PDEs <span class="dot-separator" aria-hidden="true">·</span> Vienna, Austria</p>
+    <div class="resource-row"><a class="resource-chip" href="https://focm2026.univie.ac.at/?page_id=1497" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>Jul</span><strong>2026</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Invited talk</div>
+    <h4>Dynamical Low-Rank Filters for Data Assimilation</h4>
+    <p>SCICADE 2026 · MS35 High-performance and scalable algorithms for DLRA <span class="dot-separator" aria-hidden="true">·</span> Edinburgh, United Kingdom</p>
+    <div class="resource-row"><a class="resource-chip" href="https://scicade.org/minisymposia" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>Apr</span><strong>2026</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Talk</div>
+    <h4>Dynamical Low-Rank Filters for Data Assimilation</h4>
+    <p>Swiss Numerics Day 2026 <span class="dot-separator" aria-hidden="true">·</span> Zurich, Switzerland</p>
+    <div class="resource-row"><a class="resource-chip" href="https://math.ethz.ch/sam/news-and-events/conferences-and-workshops/swiss-numerics-day1/programm.html" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div></div><div class="year-group"><h4 class="year-heading">2025</h4><div class="talk-list"><article class="talk-item">
+  <div class="talk-date"><span>Jul</span><strong>2025</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Contributed talk</div>
+    <h4>Dynamical Low-Rank Approximation for SDEs: an interacting particle-system ROM</h4>
+    <p>MCM 2025 <span class="dot-separator" aria-hidden="true">·</span> Chicago, USA</p>
+    <div class="resource-row"><a class="resource-chip" href="https://ccbatiit.github.io/mcm2025/" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>Jul</span><strong>2025</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Contributed talk</div>
+    <h4>Dynamical Low-Rank Approximation Applied to Financial SDEs</h4>
+    <p>SIAM FM 2025 <span class="dot-separator" aria-hidden="true">·</span> Miami, USA</p>
+    <div class="resource-row"><a class="resource-chip" href="https://www.siam.org/conferences-events/siam-conferences/fm25/" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div></div><div class="year-group"><h4 class="year-heading">2024</h4><div class="talk-list"><article class="talk-item">
+  <div class="talk-date"><span>Sep</span><strong>2024</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Poster</div>
+    <h4>Numerical Methods for DLRA for Stochastic Differential Equations</h4>
+    <p>Swiss Numerical Analysis Day 2024 <span class="dot-separator" aria-hidden="true">·</span> Geneva, Switzerland</p>
+    <div class="resource-row"><a class="resource-chip" href="https://www.unige.ch/math/snd24/program" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>Jul</span><strong>2024</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Invited talk</div>
+    <h4>Dynamical Low-Rank Approximation for Stochastic Differential Equations</h4>
+    <p>SCICADE 2024 · MS26-1 DLRA: From Theory to Applications <span class="dot-separator" aria-hidden="true">·</span> Singapore</p>
+    <div class="resource-row"><a class="resource-chip" href="https://www.scicade2024.org/" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>May</span><strong>2024</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Poster</div>
+    <h4>Numerical Methods for DLRA for Stochastic Differential Equations</h4>
+    <p>STOCHNUM Workshop 2024, KAUST <span class="dot-separator" aria-hidden="true">·</span> Jeddah, Saudi Arabia</p>
+    <div class="resource-row"><a class="resource-chip" href="https://cemse.kaust.edu.sa/events/by-type/workshop/2024/05/19/stochastic-numerics-and-statistical-learning-theory-and" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>Feb</span><strong>2024</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Invited talk</div>
+    <h4>Dynamical Low-Rank Approximation for Stochastic Differential Equations</h4>
+    <p>SIAM UQ 2024 · MS173 <span class="dot-separator" aria-hidden="true">·</span> Trieste, Italy</p>
+    <div class="resource-row"></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>Feb</span><strong>2024</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Poster</div>
+    <h4>Dynamical Low-Rank Approximation for Stochastic Differential Equations</h4>
+    <p>SWICCOMAS Poster Competition 2024 · 2nd place <span class="dot-separator" aria-hidden="true">·</span> Zurich, Switzerland</p>
+    <div class="resource-row"><a class="resource-chip" href="https://swiccomas.ch/swiccomas-2024-ga-and-poster-competition/" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div></div><div class="year-group"><h4 class="year-heading">2023</h4><div class="talk-list"><article class="talk-item">
+  <div class="talk-date"><span>Nov</span><strong>2023</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Invited talk</div>
+    <h4>Dynamical Low-Rank Approximation for Stochastic Differential Equations</h4>
+    <p>University of Strathclyde seminar <span class="dot-separator" aria-hidden="true">·</span> Glasgow, United Kingdom</p>
+    <div class="resource-row"></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>Jun</span><strong>2023</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Poster</div>
+    <h4>Dynamically Orthogonal Approximation for Stochastic Differential Equations</h4>
+    <p>Swiss Numerics Day 2023 <span class="dot-separator" aria-hidden="true">·</span> Bern, Switzerland</p>
+    <div class="resource-row"></div>
+  </div>
+</article>
+<article class="talk-item">
+  <div class="talk-date"><span>May</span><strong>2023</strong></div>
+  <div class="talk-details">
+    <div class="talk-label">Poster</div>
+    <h4>Dynamically Orthogonal Approximation for Stochastic Differential Equations</h4>
+    <p>NASPDE 2023, TU/e <span class="dot-separator" aria-hidden="true">·</span> Eindhoven, Netherlands</p>
+    <div class="resource-row"><a class="resource-chip" href="https://www.eurandom.tue.nl/event/workshop-numerical-analysis-of-stochastic-partial-differential-equations-naspde/" target="_blank" rel="noopener noreferrer">Event <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div></div></div>
+    </section>
+
+    <!-- TEACHING: Exact codes appear before course names. -->
+    <section id="teaching" class="content-section" aria-labelledby="teaching-title">
+      <div class="section-tag"><span>05 / TEACHING</span><span class="tag-rule"></span></div>
+      <h2 class="section-headline" id="teaching-title">Teaching<span class="headline-dot">.</span></h2>
+      <div class="publication-group"><div class="group-heading"><h3>Teaching Assistantships</h3><span>EPFL · UNIL</span></div><div class="teaching-list"><div class="teaching-row"><div class="date-column">Fall 2026</div><div class="teaching-courses"><p>MATH-450 — Numerical Integration of Stochastic Differential Equations</p></div></div>
+<div class="teaching-row"><div class="date-column">Spring 2026</div><div class="teaching-courses"><p>UNIL-108 — Mathematics for Biology II</p><p>MATH-450 — Numerical Integration of Stochastic Differential Equations</p></div></div>
+<div class="teaching-row"><div class="date-column">Fall 2024</div><div class="teaching-courses"><p>MATH-450 — Numerical Integration of Stochastic Differential Equations</p></div></div>
+<div class="teaching-row"><div class="date-column">Spring 2024</div><div class="teaching-courses"><p>MATH-450 — Numerical Integration of Stochastic Differential Equations</p></div></div>
+<div class="teaching-row"><div class="date-column">Fall 2023</div><div class="teaching-courses"><p>MATH-203(b) — Analysis III</p></div></div>
+<div class="teaching-row"><div class="date-column">Spring 2023</div><div class="teaching-courses"><p>MATH-105(a) — Analysis II</p></div></div>
+<div class="teaching-row"><div class="date-column">Fall 2022</div><div class="teaching-courses"><p>MATH-251(a) — Numerical Analysis</p></div></div></div></div>
+      <div class="publication-group"><div class="group-heading"><h3>Student Supervision</h3><span>SELECTED PROJECTS</span></div><div class="student-list"><article class="student-row"><div><h4>Arthur Aimone</h4><p>Localization in DLR Filtering</p><span class="subtle-text">August 2026 – ongoing</span></div><div class="student-type">Master’s thesis</div></article>
+<article class="student-row"><div><h4>Mathis Caron</h4><p>Efficient Gradient-free Riemannian Langevin Sampler</p><span class="subtle-text">September 2026 – ongoing</span></div><div class="student-type">Semester project</div></article>
+<article class="student-row"><div><h4>Francesca Bettinelli</h4><p>Neural Galerkin Method</p><span class="subtle-text">February – June 2024</span></div><div class="student-type">Semester project<br><a class="resource-chip" href="https://github.com/FraBet29/Neural_Galerkin/blob/main/slides/Semester_Project_Neural_Galerkin_Slides.pdf" target="_blank" rel="noopener noreferrer">Slides <span aria-hidden="true">↗</span></a></div></article>
+<article class="student-row"><div><h4>Eliott Van Dieren</h4><p>Reduced Order Methods and Dynamical Low-Rank Approximations for Stochastic Differential Equations with Applications to Finance</p><span class="subtle-text">Summer 2023</span></div><div class="student-type">Summer project</div></article></div></div>
+    </section>
+
+    <!-- ACADEMIC ACTIVITIES -->
+    <section id="activities" class="content-section" aria-labelledby="activities-title">
+      <div class="section-tag"><span>06 / ACADEMIC ACTIVITIES</span><span class="tag-rule"></span></div>
+      <h2 class="section-headline" id="activities-title">Academic Activities<span class="headline-dot">.</span></h2>
+      <p class="section-lede">Scientific organization, academic community work, research visits, and selected awards.</p>
+      <div class="activity-group"><div class="group-heading"><h3>Scientific Organization</h3><span>WORKSHOPS &amp; MINISYMPOSIA</span></div><article class="activity-row"><div class="date-column">Jul 2027</div><div><h4>Scalable Methods for High-Dimensional Inverse Problems</h4><p>ICIAM 2027 · The Hague, Netherlands · Minisymposium organized with Jana de Wiljes and Thomas Trigo Trindade · Scheduled</p><a class="resource-chip" href="https://iciam2027.org" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article>
+<article class="activity-row"><div class="date-column">Feb 2027</div><div><h4>Dimensionality Reduction for Large-Scale Data Assimilation</h4><p>SIAM CSE 2027 · Pittsburgh, USA · Minisymposium organized with Thomas Trigo Trindade · Scheduled</p><a class="resource-chip" href="https://www.siam.org/conferences-events/siam-conferences/cse27/" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article>
+<article class="activity-row"><div class="date-column">Jun 2026</div><div><h4>NUMRAD26</h4><p>Bernoulli Center and EMS Summer School · Lausanne, Switzerland · Organizer · Numerics of Random Differential Models</p><a class="resource-chip" href="https://numrad.epfl.ch" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article>
+<article class="activity-row"><div class="date-column">Jun 2024</div><div><h4>NUMRAD24</h4><p>EMS Summer School · Lausanne, Switzerland · Organizer · Numerics of Random Differential Models</p><a class="resource-chip" href="https://numrad.epfl.ch/former-editions/" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article></div>
+      <div class="activity-group"><div class="group-heading"><h3>Leadership &amp; Mentorship</h3><span>COMMUNITY</span></div>
+        <article class="activity-row"><div class="date-column">2023–2024</div><div><h4>President — EPFL SIAM Student Chapter</h4><p>September 2023 – December 2024. Organized scientific seminars, career events, and workshops, including the G-Research Quant Finance Workshop and the SIAM Professional Journey Showcase.</p><a class="resource-chip" href="https://siam.epfl.ch" target="_blank" rel="noopener noreferrer">EPFL SIAM <span aria-hidden="true">↗</span></a></div></article>
+        <article class="activity-row"><div class="date-column">2023–present</div><div><h4>Mentor — LeadTheFuture</h4><p>Supporting mathematics students in applications to Master’s and PhD programmes.</p><a class="resource-chip" href="https://leadthefuture.tech/" target="_blank" rel="noopener noreferrer">LeadTheFuture <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+      <div class="activity-group"><div class="group-heading"><h3>Research Visits</h3><span>INTERNATIONAL</span></div><article class="activity-row"><div class="date-column">2025</div><div><h4>Massachusetts Institute of Technology</h4><p>Cambridge, USA · 11-month research visit · Prof. Youssef Marzouk’s UQ Group · Data assimilation</p><a class="resource-chip" href="https://uqgroup.mit.edu" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article>
+<article class="activity-row"><div class="date-column">2024</div><div><h4>University of Strathclyde</h4><p>Glasgow, United Kingdom · Research visit with Dr. Yoshihito Kazashi · Monte Carlo methods for SDEs</p></div></article>
+<article class="activity-row"><div class="date-column">2023</div><div><h4>University of Strathclyde</h4><p>Glasgow, United Kingdom · Research visit with Dr. Yoshihito Kazashi · Well-posedness of SDEs</p></div></article></div>
+      <div class="activity-group"><div class="group-heading"><h3>Grants &amp; Awards</h3><span>SELECTED RECOGNITION</span></div><article class="activity-row"><div class="date-column">2025</div><div><h4>SNSF Mobility Grant</h4><p>Support for the 11-month research visit to MIT</p></div></article>
+<article class="activity-row"><div class="date-column">2025</div><div><h4>SIAM Student Chapter Certificate of Recognition</h4><p>Individual award</p><a class="resource-chip" href="https://www.siam.org/media/rosdicst/sn_june2025.pdf" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article>
+<article class="activity-row"><div class="date-column">2024</div><div><h4>Second Place — SWICCOMAS Poster Competition</h4><p>Scientific poster competition</p><a class="resource-chip" href="https://swiccomas.ch/swiccomas-2024-ga-and-poster-competition/" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article></div>
+    </section>
+    <footer class="site-footer"><span>© 2026 Fabio Zoccolan</span><span>Mathematics · EPFL</span><a href="#home">Back to top ↑</a></footer>
+  </main>
+</div>
+<dialog id="image-dialog" class="image-dialog" aria-label="Expanded scientific figure"><div class="dialog-top"><p id="dialog-caption"></p><button type="button" id="dialog-close" aria-label="Close image viewer">Close ✕</button></div><img id="dialog-image" src="" alt=""></dialog>
+</body>
+</html>
