@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="#2451f4" name="theme-color"/>
+<meta content="Research interests of Fabio Zoccolan: numerical methods for stochastic differential equations, data assimilation, and reduced-order modelling." name="description"/>
+<title>Research — Fabio Zoccolan</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+</head>
+<body data-page="research">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="mobile-header"><a class="mobile-brand" href="index.html">Fabio Zoccolan</a><button aria-controls="site-sidebar" aria-expanded="false" class="menu-toggle" id="menu-toggle" type="button">Menu <span aria-hidden="true" class="menu-symbol">☰</span></button></div>
+<div class="menu-backdrop" hidden="" id="menu-backdrop"></div>
+<div class="site-shell">
+<aside aria-label="Primary navigation" class="sidebar" id="site-sidebar">
+<div class="sidebar-top">
+<a class="sidebar-identity" href="index.html"><span class="sidebar-monogram">FZ / RESEARCH</span><strong>Fabio<br/>Zoccolan</strong></a>
+<p class="sidebar-role">PhD Student · Numerical Analysis</p>
+<p class="sidebar-affiliation">École Polytechnique Fédérale de Lausanne (EPFL)</p>
+<div class="sidebar-rule"></div>
+<nav aria-label="Website sections" class="site-nav">
+<a class="" href="index.html"><span>01</span>Home</a>
+<a aria-current="page" class="active" href="research.html"><span>02</span>Research</a>
+<a class="" href="publications.html"><span>03</span>Publications</a>
+<a class="" href="talks.html"><span>04</span>Talks</a>
+<a class="" href="teaching.html"><span>05</span>Teaching</a>
+<a class="" href="activities.html"><span>06</span>CV &amp; Academic Activities</a>
+</nav>
+</div>
+<div class="sidebar-bottom">
+<div class="sidebar-rule"></div>
+<a href="mailto:fabio.zoccolan@epfl.ch">Email <span aria-hidden="true">↗</span></a>
+<a href="assets/cv/Fabio_Zoccolan_CV.pdf" rel="noopener" target="_blank">CV (PDF) <span aria-hidden="true">↗</span></a>
+<span class="sidebar-note">Mathematics · EPFL</span>
+</div>
+</aside>
+<main id="main-content">
+<!-- HOME: Edit the About me paragraphs and academic links here. -->
+
+<!-- RESEARCH: Three themes, original scientific plots and animation. -->
+<section aria-labelledby="research-title" class="content-section single-page-section" id="research">
+<div class="section-tag"><span>02 / RESEARCH</span><span class="tag-rule"></span></div>
+<h2 class="section-headline" id="research-title">Research</h2>
+<p class="section-lede">My interests connect numerical analysis, stochastic dynamical systems, data assimilation, and reduced-order modelling.</p><nav aria-label="Research themes" class="research-jumpnav"><a href="#research-sde">Numerical SDEs</a><a href="#research-data">Data Assimilation</a><a href="#research-rom">Reduced-Order Modelling</a></nav>
+<article class="research-theme" id="research-sde">
+<div class="theme-heading"><span class="theme-index">01</span><div><p class="theme-kicker">NUMERICAL ANALYSIS</p><h3>Numerical Methods for Stochastic Differential Equations</h3></div></div>
+<div class="theme-body"><p>My research focuses on the development and mathematical analysis of numerical methods for stochastic differential equations. I am particularly interested in numerical discretization schemes for stochastic dynamical systems, their convergence and stability properties, and the development of computationally efficient approximations.</p>
+<p>A particular focus of my work is the numerical analysis of dynamical low-rank approximations for stochastic differential equations, including the study of approximation errors, time discretization, and mean-square stability.</p></div>
+<div class="media-section-title"><span>NUMERICAL EXPERIMENTS</span><span class="soft-line"></span><span>1 × 2</span></div>
+<div class="figure-grid grid-two"><figure class="science-figure">
+<button aria-label="Expand figure: Convergence and error analysis" class="figure-open" data-caption="Convergence and error analysis" data-full="assets/images/sde-convergence-error.png" type="button">
+<img alt="Logarithmic numerical error plot comparing DLR Euler–Maruyama, projection–splitting, and other discretizations against the true solution." decoding="async" loading="lazy" src="assets/images/sde-convergence-error.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>Convergence and error analysis</strong><span>Numerical errors for different DLR discretizations as the time-step size varies.</span></figcaption>
+</figure><figure class="science-figure">
+<button aria-label="Expand figure: Relative averaged mean error" class="figure-open" data-caption="Relative averaged mean error" data-full="assets/images/sde-relative-averaged-mean-error.png" type="button">
+<img alt="Relative averaged mean error versus number of samples at time T=20 for different DLR filtering methods and approximation ranks." decoding="async" loading="lazy" src="assets/images/sde-relative-averaged-mean-error.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>Relative averaged mean error</strong><span>Error against EF SDE as a function of sample size for multiple ranks and filtering methods, T = 20.</span></figcaption>
+</figure></div>
+<div class="associated-work"><p>RELATED WORK</p><div class="resource-row"><a class="resource-chip" href="https://doi.org/10.1090/mcom/3999" rel="noopener noreferrer" target="_blank">DLRA for SDEs · Journal <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://arxiv.org/abs/2601.21428" rel="noopener noreferrer" target="_blank">Time discretization · arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://arxiv.org/abs/2609.20317" rel="noopener noreferrer" target="_blank">Stochastic discretization · arXiv <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23344557" rel="noopener noreferrer" target="_blank">Code · Zenodo <span aria-hidden="true">↗</span></a></div></div>
+</article>
+<article class="research-theme" id="research-data">
+<div class="theme-heading"><span class="theme-index">02</span><div><p class="theme-kicker">FILTERING &amp; SMOOTHING</p><h3>Data Assimilation</h3></div></div>
+<div class="theme-body"><p>My research in data assimilation focuses on filtering and smoothing for stochastic dynamical systems, with particular emphasis on computationally efficient methods for high-dimensional problems. I investigate particle-based approaches and dynamical low-rank approximations for state estimation and uncertainty quantification.</p></div>
+<div class="media-section-title"><span>TWO-LAYER QUASI-GEOSTROPHIC MODEL</span><span class="soft-line"></span><span>1 × 4</span></div>
+<p class="media-intro">State estimation for a two-layer quasi-geostrophic problem. The four figures compare the reference state and different filtering approaches at T = 60 (layer 1).</p>
+<div class="figure-grid grid-four"><figure class="science-figure">
+<button aria-label="Expand figure: Reference" class="figure-open" data-caption="Reference" data-full="assets/images/qg-reference.png" type="button">
+<img alt="Contour plot of the true reference state of the two-layer quasi-geostrophic model, layer one." decoding="async" loading="lazy" src="assets/images/qg-reference.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>Reference</strong><span>True state (T = 60).</span></figcaption>
+</figure><figure class="science-figure">
+<button aria-label="Expand figure: Standard PF" class="figure-open" data-caption="Standard PF" data-full="assets/images/qg-standard-pf.png" type="button">
+<img alt="Contour plot of the standard particle-filter mean for a two-layer quasi-geostrophic model, layer one." decoding="async" loading="lazy" src="assets/images/qg-standard-pf.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>Standard PF</strong><span>Standard particle-filter mean.</span></figcaption>
+</figure><figure class="science-figure">
+<button aria-label="Expand figure: EF SDE" class="figure-open" data-caption="EF SDE" data-full="assets/images/qg-ef-sde.png" type="button">
+<img alt="Contour plot of the EF SDE mean for a two-layer quasi-geostrophic model, layer one." decoding="async" loading="lazy" src="assets/images/qg-ef-sde.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>EF SDE</strong><span>Ensemble-filter SDE mean.</span></figcaption>
+</figure><figure class="science-figure">
+<button aria-label="Expand figure: DLR" class="figure-open" data-caption="DLR" data-full="assets/images/qg-dlr.png" type="button">
+<img alt="Contour plot of the dynamical low-rank reconstructed field for a two-layer quasi-geostrophic model, layer one." decoding="async" loading="lazy" src="assets/images/qg-dlr.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>DLR</strong><span>Dynamical low-rank reconstruction.</span></figcaption>
+</figure></div>
+<div class="media-section-title media-gap"><span>NOISY LORENZ ’63 MODEL</span><span class="soft-line"></span><span>ANIMATION</span></div>
+<figure class="animation-figure"><img alt="Animated comparison of particle cloud evolution for different filters applied to a noisy Lorenz '63 problem." loading="lazy" src="assets/images/lorenz63-particle-clouds.gif"/><figcaption><strong>Particle evolution for a noisy Lorenz ’63 problem.</strong><span>Animated comparison of particle clouds for different filtering approaches.</span></figcaption></figure>
+<div class="associated-work"><p>RELATED WORK &amp; CODE</p><div class="resource-row"><a class="resource-chip" href="https://arxiv.org/abs/2607.27432" rel="noopener noreferrer" target="_blank">DLR Filters · Paper <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23342050" rel="noopener noreferrer" target="_blank">DLR Filters · Code <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://arxiv.org/abs/2607.27438" rel="noopener noreferrer" target="_blank">DLR Smoothing · Paper <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.5281/zenodo.23336917" rel="noopener noreferrer" target="_blank">DLR Smoothing · Code <span aria-hidden="true">↗</span></a></div></div>
+</article>
+<article class="research-theme" id="research-rom">
+<div class="theme-heading"><span class="theme-index">03</span><div><p class="theme-kicker">LOW-DIMENSIONAL APPROXIMATIONS</p><h3>Reduced-Order Modelling</h3></div></div>
+<div class="theme-body"><p>My research interests encompass reduced-order modelling in a broad sense, with a focus on the development and analysis of efficient numerical methods for approximating high-dimensional and complex dynamical systems.</p>
+<p>A central direction of my research concerns dynamical low-rank approximation (DLRA), particularly for stochastic differential equations. I am interested in the mathematical foundations of these approximations, their numerical discretization, and their application to problems involving stochastic dynamics and uncertainty quantification.</p>
+<p>More generally, I am interested in reduced-basis methods and reduced-order modelling for time-dependent problems. My previous work includes the development and analysis of stabilized reduced-basis methods for parametrized advection-dominated optimal control problems with random inputs, investigating in particular the role of streamline upwind Petrov–Galerkin (SUPG) stabilization during the offline and online stages.</p></div>
+<div class="media-section-title"><span>OFFLINE-ONLY VS OFFLINE–ONLINE SUPG STABILIZATION</span><span class="soft-line"></span><span>1 × 2</span></div>
+<div class="figure-grid grid-two"><figure class="science-figure">
+<button aria-label="Expand figure: Offline-only SUPG" class="figure-open" data-caption="Offline-only SUPG" data-full="assets/images/supg-offline-only.png" type="button">
+<img alt="Scientific heatmap of offline-only SUPG stabilization for a reduced-order approximation." decoding="async" loading="lazy" src="assets/images/supg-offline-only.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>Offline-only SUPG</strong><span>Stabilization applied during the offline stage.</span></figcaption>
+</figure><figure class="science-figure">
+<button aria-label="Expand figure: Offline–online SUPG" class="figure-open" data-caption="Offline–online SUPG" data-full="assets/images/supg-offline-online.png" type="button">
+<img alt="Scientific heatmap of offline-online SUPG stabilization for a reduced-order approximation." decoding="async" loading="lazy" src="assets/images/supg-offline-online.png"/>
+<span aria-hidden="true" class="expand-hint">View larger <span>↗</span></span>
+</button>
+<figcaption><strong>Offline–online SUPG</strong><span>Stabilization applied during both stages.</span></figcaption>
+</figure></div>
+<div class="associated-work"><p>RELATED WORK</p><div class="resource-row"><a class="resource-chip" href="https://doi.org/10.1515/cmam-2023-0171" rel="noopener noreferrer" target="_blank">SUPG reduced-order method · Journal <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.1515/jnma-2023-0006" rel="noopener noreferrer" target="_blank">Stabilized weighted ROM · Journal <span aria-hidden="true">↗</span></a><a class="resource-chip" href="https://doi.org/10.1090/mcom/3999" rel="noopener noreferrer" target="_blank">DLRA for SDEs · Journal <span aria-hidden="true">↗</span></a></div></div>
+</article>
+</section>
+<!-- PUBLICATIONS:-->
+
+<!-- TALKS: Keep both scheduled 2027 talks in Upcoming Talks. -->
+
+<!-- TEACHING: Exact codes appear before course names. -->
+
+<!-- CV & ACADEMIC ACTIVITIES -->
+
+<footer class="site-footer"><span>© 2026 Fabio Zoccolan</span><span>Mathematics · EPFL</span><a href="#main-content">Back to top ↑</a></footer>
+</main>
+</div>
+<dialog aria-label="Expanded scientific figure" class="image-dialog" id="image-dialog"><div class="dialog-top"><p id="dialog-caption"></p><button aria-label="Close image viewer" id="dialog-close" type="button">Close ✕</button></div><img alt="" id="dialog-image" src=""/></dialog>
+</body>
+</html>

@@ -1,11 +1,9 @@
-/* Lightweight, dependency-free navigation and image enlargement. */
+/* Multi-page navigation and scientific-figure lightbox; no dependencies. */
 (() => {
   const body = document.body;
   const toggle = document.getElementById('menu-toggle');
   const overlay = document.getElementById('menu-backdrop');
   const sidebar = document.getElementById('site-sidebar');
-  const navLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
-  const sections = [...document.querySelectorAll('main > section[id]')];
 
   function setMenu(open) {
     body.classList.toggle('menu-open', open);
@@ -18,30 +16,12 @@
     if (open) sidebar?.querySelector('.site-nav a')?.focus();
   });
   overlay?.addEventListener('click', () => setMenu(false));
-  navLinks.forEach(link => link.addEventListener('click', () => setMenu(false)));
+  document.querySelectorAll('.site-nav a').forEach(link =>
+    link.addEventListener('click', () => setMenu(false))
+  );
   window.addEventListener('keydown', event => {
     if (event.key === 'Escape') setMenu(false);
   });
-
-  let tick = false;
-  function updateActiveLink() {
-    const cutoff = window.innerHeight * 0.33;
-    let current = sections[0];
-    sections.forEach(section => { if (section.getBoundingClientRect().top <= cutoff) current = section; });
-    for (const link of navLinks) {
-      const active = link.getAttribute('href') === `#${current.id}`;
-      link.classList.toggle('active', active);
-      if (active) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    }
-    tick = false;
-  }
-  window.addEventListener('scroll', () => {
-    if (tick) return;
-    tick = true;
-    window.requestAnimationFrame(updateActiveLink);
-  }, {passive: true});
-  updateActiveLink();
 
   const dialog = document.getElementById('image-dialog');
   const dialogImage = document.getElementById('dialog-image');
@@ -63,7 +43,5 @@
   dialog?.addEventListener('click', event => {
     if (event.target === dialog) dialog.close();
   });
-  dialog?.addEventListener('close', () => {
-    dialogImage.removeAttribute('src');
-  });
+  dialog?.addEventListener('close', () => dialogImage?.removeAttribute('src'));
 })();

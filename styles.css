@@ -296,3 +296,10 @@ a.profile-link:hover { background: #243b6a; border-color: #8ba9ff; color: white;
   #main-content { padding: 0 20px; background: white; color: black; }
   .content-section { break-inside: avoid-page; }
 }
+
+/* Multi-page navigation: research sections remain together on research.html. */
+.single-page-section { min-height: calc(100vh - 90px); border-bottom: 0; }
+.research-jumpnav { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 35px; }
+.research-jumpnav a { display: inline-block; padding: 10px 14px; font-size: 12px; font-weight: 690; line-height: 1.4; border: 1px solid #506995; border-radius: 4px; color: #e8edff; background: #182238; transition: background-color .18s, border-color .18s; }
+.research-jumpnav a:hover { color: white; border-color: #a4bdff; background: #2451f4; }
+@media (max-width: 690px) { .research-jumpnav { margin: 22px 0 26px; gap: 8px; } .research-jumpnav a { padding: 9px 11px; } }
