@@ -3,11 +3,20 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="dark" name="color-scheme"/>
+<meta content="dark light" name="color-scheme"/>
 <meta content="#2451f4" name="theme-color"/>
 <meta content="Fabio Zoccolan is a PhD student in numerical analysis at EPFL. Academic biography, research interests, contact and academic profiles." name="description"/>
 <title>Fabio Zoccolan — Academic Website</title>
 <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<script>
+  /* Apply a saved theme before the stylesheet renders to avoid flashing. */
+  try {
+    document.documentElement.dataset.theme =
+      localStorage.getItem('fabio-site-theme') === 'light' ? 'light' : 'dark';
+  } catch (error) {
+    document.documentElement.dataset.theme = 'dark';
+  }
+</script>
 <link href="styles.css" rel="stylesheet"/>
 <script defer="" src="script.js"></script>
 </head>
@@ -35,6 +44,10 @@
 <div class="sidebar-rule"></div>
 <a href="mailto:fabio.zoccolan@epfl.ch">Email <span aria-hidden="true">↗</span></a>
 <a href="assets/cv/Fabio_Zoccolan_CV.pdf" rel="noopener" target="_blank">CV (PDF) <span aria-hidden="true">↗</span></a>
+<button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+  <span class="theme-toggle-icon" aria-hidden="true">&#9728;</span>
+  <span class="theme-toggle-text">Light mode</span>
+</button>
 <span class="sidebar-note">Mathematics · EPFL</span>
 </div>
 </aside>
@@ -75,7 +88,7 @@
 <div class="home-bottom-grid">
 <div class="home-feature">
 <div class="mini-heading"><span class="mini-line"></span><h2>Research focus</h2></div>
-<p>I work on the development and analysis of numerical methods for stochastic dynamical systems, with interests spanning dynamical low-rank approximation, data assimilation, and efficient reduced-order models.</p>
+<p>I work on the development and analysis of numerical methods for differential equations, with interests spanning SDEs, dynamical low-rank approximation, data assimilation, and efficient reduced-order models.</p>
 <a class="text-action" href="research.html">Explore my research <span aria-hidden="true">↗</span></a>
 </div>
 <div class="home-feature recent-work">
