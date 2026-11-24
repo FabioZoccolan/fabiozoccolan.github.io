@@ -462,3 +462,12 @@ html[data-theme="light"] .image-dialog { background: #fbfcff; color: #1c2943; bo
 html[data-theme="light"] .dialog-top { border-color: #ccd9ec; }
 html[data-theme="light"] .image-dialog::backdrop { background: rgba(13,30,68,.72); }
 @media print { .theme-toggle { display:none !important; } }
+
+/* Lorenz '63 video size */
+.animation-figure video {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+}
