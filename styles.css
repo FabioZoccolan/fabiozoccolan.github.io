@@ -467,7 +467,7 @@ html[data-theme="light"] .image-dialog::backdrop { background: rgba(13,30,68,.72
 .animation-figure video {
   display: block;
   width: 100%;
-  max-width: 850px;
+  max-width: 900px;
   height: auto;
   margin: 0 auto;
 }
