@@ -466,8 +466,8 @@ html[data-theme="light"] .image-dialog::backdrop { background: rgba(13,30,68,.72
 /* Lorenz '63 video size */
 .animation-figure video {
   display: block;
-  width: 100%;
-  max-width: 900px;
+  width: 90%;
+  max-width: 1000px;
   height: auto;
   margin: 0 auto;
 }
