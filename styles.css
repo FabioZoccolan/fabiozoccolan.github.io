@@ -463,14 +463,25 @@ html[data-theme="light"] .dialog-top { border-color: #ccd9ec; }
 html[data-theme="light"] .image-dialog::backdrop { background: rgba(13,30,68,.72); }
 @media print { .theme-toggle { display:none !important; } }
 
-/* Lorenz '63 animation — large, without cropping */
-.animation-figure video {
+
+/* Lorenz '63 animation — full width, no cropping */
+
+.animation-figure {
   display: block;
   width: 100%;
   max-width: none;
+  margin: 0;
+  overflow: visible;
+}
+
+.animation-figure video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
   height: auto !important;
-  max-height: none;
-  aspect-ratio: auto;
-  object-fit: contain;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center;
   margin: 0 auto;
 }
